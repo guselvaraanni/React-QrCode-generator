@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-container h1{
+  font-weight: 600;
+  font-size: 18px;
+  color:  rgb(44, 44, 107);
+  border-bottom:1px solid #cdcaca ;
+  padding: 10px 0px;
+}
+.qr-code-image{
+padding: 5px;
+box-shadow: 0 0 10px rgb(91, 86, 86);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-label{
+display:block;
+margin-bottom:8px;
+color: rgb(44, 44, 107);
+font-size: 15px;
+font-weight: 500;
 }
+
+input[type="text"]{
+padding: 12px;
+margin-bottom: 20px;
+width: 100%;
+font-size: 16px;
+border: 2px solid rgb(44, 44, 107);
+border-radius: 5px;
+}
+
+button{
+padding: 15px 20px;
+font-size: 18px;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 3s;
+
+}
+
+.generate-button{
+background-color:rgb(44, 44, 107);
+}
+.generate-button:disabled{
+background-color: rgb(79, 99, 99);
+cursor: not-allowed;
+}
+
+.download-button{
+background-color: green;
+margin-left: 10px;
+}
+
+.download-button{
+  background-color: rgb(17, 90, 17);
+  }
